@@ -20,6 +20,6 @@ import io.cucumber.junit.CucumberOptions;
 	    dryRun = false,
 	    publish = true
 	)
-public class CucumberRunner {
+public class TestRunner {
 
 } 
