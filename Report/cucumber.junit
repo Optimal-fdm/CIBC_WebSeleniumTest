@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="81.665" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-11-01T00:24:51.863446200Z">
+<testcase classname="Home Page Menus" name="Launch the application" time="10.76">
+<system-out><![CDATA[
+Given the user has launched the application.................................passed
+Then the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.1" time="0.755">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Bank Accounts" menu..........................passed
+Then the user should see the dropdown for "Bank Accounts"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.2" time="0.675">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Credit Cards" menu...........................passed
+Then the user should see the dropdown for "Credit Cards"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.3" time="0.716">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Mortgages" menu..............................passed
+Then the user should see the dropdown for "Mortgages".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.4" time="0.764">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Lending" menu................................passed
+Then the user should see the dropdown for "Lending".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.5" time="0.649">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Investments" menu............................passed
+Then the user should see the dropdown for "Investments".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.6" time="0.729">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Insurance" menu..............................passed
+Then the user should see the dropdown for "Insurance".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.7" time="0.6">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Ways to Bank" menu...........................passed
+Then the user should see the dropdown for "Ways to Bank"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Page Menus" name="Verify the menu dropdown is displayed when hovered. - #1.8" time="0.591">
+<system-out><![CDATA[
+Given the user should be able to see the page title "Personal Banking and Financial Services | CIBC".passed
+When the user hovers over the "Smart Advice" menu...........................passed
+Then the user should see the dropdown for "Smart Advice"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Location Finder functionality on the CIBC website" name="Verify that the location feature is visible and opens correctly" time="17.479">
+<system-out><![CDATA[
+Given the user has launched the application.................................passed
+And the user should be able to see location icon on the homepage............passed
+When the user clicks on the location icon...................................passed
+Then the user should be able to see the page title "CIBC Branch and ATM Locator | CIBC".passed
+]]></system-out>
+</testcase>
+<testcase classname="Location Finder functionality on the CIBC website" name="Verify search results for different cities - #1.1" time="3.491">
+<system-out><![CDATA[
+When the user enters "Toronto" in the location search box...................passed
+And the user clicks the Search button.......................................passed
+Then A list of nearby branches or ATMs should be displayed for city name "Toronto".passed
+]]></system-out>
+</testcase>
+<testcase classname="Location Finder functionality on the CIBC website" name="Verify search results for different cities - #1.2" time="3.796">
+<system-out><![CDATA[
+When the user enters "Vancouver" in the location search box.................passed
+And the user clicks the Search button.......................................passed
+Then A list of nearby branches or ATMs should be displayed for city name "Vancouver".passed
+]]></system-out>
+</testcase>
+<testcase classname="Location Finder functionality on the CIBC website" name="Verify search results for different cities - #1.3" time="3.069">
+<system-out><![CDATA[
+When the user enters "Montreal" in the location search box..................passed
+And the user clicks the Search button.......................................passed
+Then A list of nearby branches or ATMs should be displayed for city name "Montreal".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mortgage Payment Calculator" name="Navigate to Mortgage Calculators" time="21.796">
+<system-out><![CDATA[
+Given the user has launched the application.................................passed
+And the user can view the "Mortgages" menu..................................passed
+When the user hovers over the "Mortgages" menu..............................passed
+And the user clicks on "Mortgage Payment Calculator" option.................passed
+Then the user should be able to see the page title "Mortgage Payment Calculator | CIBC".passed
+]]></system-out>
+</testcase>
+<testcase classname="Mortgage Payment Calculator" name="View the Mortgage Payment Calculator form" time="3.666">
+<system-out><![CDATA[
+When the user scrolls to and clicks the buy a home button...................passed
+And the user clicks on the Skip to calculator link..........................passed
+Then the user should be able to see the Mortgage Payment Calculator form....passed
+]]></system-out>
+</testcase>
+<testcase classname="Mortgage Payment Calculator" name="Calculate the mortgage payment with different inputs - #1.1" time="7.999">
+<system-out><![CDATA[
+When the user enters a purchase price of 750................................passed
+And the user enters a down payment of 25....................................passed
+And the user enters an interest rate of 3.8.................................passed
+And the user selects "7 year fixed closed" as the term......................passed
+And the user selects "Accelerated Biweekly" as the payment frequency........passed
+And the user clicks the Calculate button....................................passed
+Then the user should be able to scroll down and see the results section.....passed
+]]></system-out>
+</testcase>
+</testsuite>
