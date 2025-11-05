@@ -3,10 +3,18 @@ package com.fdmgroup.stepdefinitions;
 
 import static org.junit.Assert.assertTrue;
 
+import com.fdmgroup.data.DataFile;
+
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class MortageCalculatorTest_StepDef {
+	
+	@Given("the user navigated to the mortage payment  calculator.")
+	public void the_user_navigated_to_the_mortage_payment_calculator() {
+	    Hooks.driver.navigate().to(DataFile.mortageCalculatorPageURL);
+	}
 
 	@When("the user scrolls to and clicks the buy a home button")
 	public void the_user_scrolls_to_and_clicks_the_button() {
@@ -55,8 +63,9 @@ public class MortageCalculatorTest_StepDef {
 	}
 
 	@Then("the user should be able to scroll down and see the results section")
-	public void the_user_should_be_able_to_scroll_down_and_see_the_results_section() {
+	public void the_user_should_be_able_to_scroll_down_and_see_the_results_section() throws InterruptedException {
 	    assertTrue(Hooks.mortgageCalculatorPage.checkgraphResultVisibility());
+	    Thread.sleep(1000);
 	}
 
 

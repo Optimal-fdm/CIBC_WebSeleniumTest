@@ -96,15 +96,13 @@ public class MortgagePaymentCalculatorPage extends BasePage {
 	
 	private void enterValue(WebElement element, String value) {
 
-	    // Scroll element into view to avoid overlap issues
 	    actions.moveToElement(element).perform();
 
-	    // Wait until element is visible and clickable
 	    waitForVisibilityOf(element);
 	    waitForClickableOf(element);
 
 	    try {
-	        element.click(); // activate field
+	        element.click();
 	        element.clear();
 	        element.sendKeys(value);
 	    } catch (ElementNotInteractableException e) {

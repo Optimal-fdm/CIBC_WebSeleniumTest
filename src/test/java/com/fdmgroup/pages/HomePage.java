@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage {
+	private static boolean flag = true; 
 
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -20,12 +21,14 @@ public class HomePage extends BasePage {
 	WebElement acceptButton;
 	
 	@FindBy(xpath ="//*[a[@data-di-id ='di-id-3777ac06-696ed554']]")
-	WebElement locatiorIcon;
+	WebElement locatorIcon;
 
 	public void handleCookies() {
+		if(flag)
 		try {
 			waitForVisibilityOf(acceptButton);
-            acceptButton.click();			
+            acceptButton.click();	
+            flag = false;
 		} catch (Exception e) {
 			System.out.println("No cookie banner appeared.");
 
@@ -65,13 +68,13 @@ public class HomePage extends BasePage {
 	}
 	
 	public boolean isLocatorIconVisible() {
-		return waitForVisibilityOf(locatiorIcon).isDisplayed();
+		return waitForVisibilityOf(locatorIcon).isDisplayed();
 	}
 	
 	public void clickLocatorIcon() {
 		
 		String parent = driver.getWindowHandle();
-		waitForClickableOf(locatiorIcon).click();
+		waitForClickableOf(locatorIcon).click();
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(d -> d.getWindowHandles().size() > 1);
 
 		for (String window : driver.getWindowHandles()) {
