@@ -14,7 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 	    		"pretty", 
 	    		"json:Report/cucumber.json",
 	    		"junit:Report/cucumber.junit",
-	    		"html:Report/cucumber.html"
+	    		"html:Report/cucumber.html",
+	    		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 	    		},
 	    monochrome = false,
 	    dryRun = false,

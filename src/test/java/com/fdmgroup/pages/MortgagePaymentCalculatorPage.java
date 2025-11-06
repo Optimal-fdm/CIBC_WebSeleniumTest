@@ -106,7 +106,6 @@ public class MortgagePaymentCalculatorPage extends BasePage {
 	        element.clear();
 	        element.sendKeys(value);
 	    } catch (ElementNotInteractableException e) {
-	       System.out.println(element + " not reachable");
 	    }
 	}
 }
